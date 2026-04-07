@@ -1,0 +1,33 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen bg-[#dff2f3] text-slate-900 antialiased;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-2xl bg-white/90 shadow-card;
+  }
+
+  .input-base {
+    @apply w-full rounded-md border border-transparent bg-[#edf0fb] px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-brand-500 px-4 py-2.5 font-bold text-white transition hover:bg-brand-600 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-soft {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-brand-500 bg-white px-4 py-2.5 font-bold text-brand-500 transition hover:bg-brand-50;
+  }
+}
